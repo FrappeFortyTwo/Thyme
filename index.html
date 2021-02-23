@@ -6,9 +6,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="/css/sidebar.css" />
-    <link rel="stylesheet" href="/css/shadowBtn.css" />
     <link rel="stylesheet" href="/css/cards.css" />
     <link rel="stylesheet" href="/css/toc.css" />
+    <link rel="stylesheet" href="/css/button.css" />
     <title>Page Title</title>
     <style></style>
   </head>
@@ -59,9 +59,8 @@
     </div>
 
     <!-- Button Bar -->
-
-    <button onclick="openNav()" class="button">=</button>
-    <button onclick="openToc()" class="button">=</button>
+    <button onclick="openNav()" class="btn">= Sourav</button>
+    <button onclick="openToc()" class="btn" style="float: right">=</button>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
@@ -126,6 +125,28 @@
             </div>
           </div>
         </div>
+
+        <div class="column">
+          <div class="row">
+            <div class="content">
+              <img
+                src="/images/mountainskies.jpg"
+                alt="Mountains"
+                style="width: 100%"
+              />
+              <h3>My Work</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="content">
+              <img src="/images/mist.jpg" alt="Lights" style="width: 100%" />
+              <h3>My Work</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+        </div>
+
         <div class="column">
           <div class="row">
             <div class="content">
@@ -168,7 +189,6 @@
       window.onload = function () {
         if (screen.width > screen.height) {
           openNav();
-          openToc();
         }
       };
 

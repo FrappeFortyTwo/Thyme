@@ -1,0 +1,15 @@
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 3px 12px;
+  text-align: center;
+  font-size: 25px;
+  margin: 4px 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #202020;
+  color: white;
+}
