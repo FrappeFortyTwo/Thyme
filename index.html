@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/shadowBtn.css" />
     <link rel="stylesheet" href="/css/cards.css" />
+    <link rel="stylesheet" href="/css/toc.css" />
     <title>Page Title</title>
     <style></style>
   </head>
@@ -46,10 +47,21 @@
       <a href="#">Blog</a>
     </div>
 
+    <!-- Toc Sidebar -->
+    <div id="myToc" class="toc">
+      <div id="closeToc">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeToc()">=</a>
+      </div>
+
+      <a href="#">About</a>
+      <a href="#">Notes</a>
+      <a href="#">Blog</a>
+    </div>
+
     <!-- Button Bar -->
 
     <button onclick="openNav()" class="button">=</button>
-    <button onclick="openNav()" class="button">=</button>
+    <button onclick="openToc()" class="button">=</button>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
@@ -156,6 +168,7 @@
       window.onload = function () {
         if (screen.width > screen.height) {
           openNav();
+          openToc();
         }
       };
 
@@ -169,6 +182,16 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
+      }
+
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      function openToc() {
+        document.getElementById("myToc").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeToc() {
+        document.getElementById("myToc").style.width = "0";
       }
     </script>
   </body>
