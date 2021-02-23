@@ -4,8 +4,7 @@
 
 body {
   background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
+  padding-top: 10px   ;
 }
 
 /* Center website */
@@ -15,8 +14,8 @@ body {
 }
 
 h1 {
-  font-size: 50px;
-  word-break: break-all;
+  font-size: 45px;
+  line-height: 60px;
 }
 
 .row {
