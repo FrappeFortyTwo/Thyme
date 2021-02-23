@@ -1,0 +1,20 @@
+.button {
+  background-color: #202020; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 45px;
+
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

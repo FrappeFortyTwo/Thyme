@@ -4,7 +4,7 @@
 
 body {
   background-color: #f1f1f1;
-  padding-top: 10px   ;
+  padding-top: 10px;
 }
 
 /* Center website */
@@ -31,7 +31,7 @@ h1 {
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 30.3%;
+  width: 20%;
 }
 
 /* Clear floats after rows */
