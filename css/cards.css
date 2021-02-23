@@ -19,13 +19,13 @@ h1 {
 }
 
 .row {
-  margin: 8px 10px;
+  width: 100%;
 }
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
-  padding: 8px;
+  padding: 10px;
 }
 
 /* Create four equal columns that floats next to each other */

@@ -1,15 +1,14 @@
 .btn {
-  background-color: #ddd;
+  background-color: #202020;
   border: none;
-  color: black;
-  padding: 3px 12px;
+  color: white;
+  padding: 12px 12px;
   text-align: center;
   font-size: 25px;
-  margin: 4px 20px;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #202020;
-  color: white;
+  background-color: #ddd;
+  color: #202020;
 }
