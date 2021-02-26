@@ -1,8 +1,10 @@
 {{ define "singlecontent" }}
-<article class="markdown">
-  <h1>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h1>
-  <p>{{- .Content -}}</p>
-</article>
+<div id="mainsingle">
+  <article class="markdown">
+    <h1>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h1>
+    <p>{{- .Content -}}</p>
+  </article>
+</div>
 {{ end }}

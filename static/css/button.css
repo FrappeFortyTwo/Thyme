@@ -8,15 +8,15 @@
   display: none;
 }
 
+/* hover effect */
+.btn:hover {
+  background-color: #ddd;
+  color: #202020;
+}
+
 /* On smaller screens, enable menu button */
 @media screen and (max-width: 450px) {
   .btn {
     display: block;
   }
-}
-
-/* hover effect */
-.btn:hover {
-  background-color: #ddd;
-  color: #202020;
 }

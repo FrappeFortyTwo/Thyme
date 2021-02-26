@@ -52,48 +52,10 @@
     </div>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <div id="main">
+    
       <!-- MAIN (Center website) -->
       {{ block "singlecontent" . }}{{ end }}
-    </div>
 
-    <script>
-      //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
-      }
-
-      // window.onload = function () {
-      //   if (screen.width > screen.height) {
-      //    openNav();
-      //    document.getElementById("myclosebtn").style.display = "none";
-      //    document.getElementById("menu").style.display = "none";
-      //   }
-      // };
-
-      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-      // function openNav() {
-      //   document.getElementById("mySidenav").style.width = "300px";
-      //   document.getElementById("main").style.marginLeft = "300px";
-      // }
-
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      // function closeNav() {
-      //   document.getElementById("mySidenav").style.width = "0";
-      //   document.getElementById("main").style.marginLeft = "0";
-      // }
-
-    </script>
   </body>
+  <script src="/js/ui.js"></script>
 </html>

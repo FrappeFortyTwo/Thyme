@@ -2,7 +2,7 @@
 .sidenav {
   height: 100%;
   /* 100% Full-height */
-  width: 300px;
+  width: 16%;
   /* 0 width - change this with JavaScript */
   position: fixed;
   /* Stay in place */
@@ -15,9 +15,7 @@
   background-color: #202020;
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 0px;
   /* Place content 60px from the top */
-  transition: 0s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -42,7 +40,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   color: gray;
-  transition: 0s;
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -53,10 +50,9 @@
   padding-top: 10px;
 }
 
-/* Position and style the close button (top right corner) */
+/* Position and style the close button */
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
@@ -64,17 +60,23 @@
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+#mainsingle {
+  margin-left: 400px;
+  margin-right: 100px;
+  padding: 0px;
+}
+
+#mainlist {
   margin-left: 400px;
   margin-right: 100px;
   padding: 0px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .sidenav {
+    width: 0%;
     padding-top: 15px;
-    width: 0px;
   }
 
   .sidenav a {
@@ -85,7 +87,12 @@
     display: block;
   }
 
-  #main {
+  #mainlist {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #mainsingle {
     margin-left: 10px;
     margin-right: 10px;
   }
