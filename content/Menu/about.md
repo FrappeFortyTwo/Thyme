@@ -1,4 +1,4 @@
 ---
 title: "About"
-description: "Something about me..."
+description: "Pretty much everything there is to know about. "
 ---
