@@ -2,7 +2,7 @@
 .sidenav {
   height: 100%;
   /* 100% Full-height */
-  width: 100px;
+  width: 300px;
   /* 0 width - change this with JavaScript */
   position: fixed;
   /* Stay in place */
@@ -17,7 +17,7 @@
   /* Disable horizontal scroll */
   padding-top: 0px;
   /* Place content 60px from the top */
-  /* transition: 0.3s; */
+  transition: 0s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -28,7 +28,7 @@
   text-decoration: none;
   color: white;
   display: block;
-  transition: 0.3s;
+  transition: 0s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -42,7 +42,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   color: gray;
-  transition: 0.3s;
+  transition: 0s;
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -60,12 +60,13 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  display: none;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left 0s;
-  margin-right: 20px;
+  margin-left: 400px;
+  margin-right: 100px;
   padding: 0px;
 }
 
@@ -73,10 +74,20 @@
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
+    width: 0px;
   }
 
   .sidenav a {
     font-size: 18px;
+  }
+
+  .sidenav .closebtn {
+    display: block;
+  }
+
+  #main {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
