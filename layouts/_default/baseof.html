@@ -14,6 +14,7 @@
       </div>
 
       <a href="/">
+
         <h1>{{ .Site.Title }}</h1>
       </a>
 
@@ -26,7 +27,6 @@
 
       <u>
         <li>
-
           {{ range where .Site.RegularPages "Type" "Menu" }}
           <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
         </li>
