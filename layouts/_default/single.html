@@ -1,0 +1,10 @@
+{{ define "singlecontent" }} Test Single Main Part
+<article class="markdown">
+  <h1>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h1>
+
+  <p>{{- .Content -}}</p>
+</article>
+
+{{ end }}
