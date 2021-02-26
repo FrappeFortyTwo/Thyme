@@ -12,7 +12,7 @@ min_version = "0.41.0"
 
 [params]
   author = "Sourav Singh"
-  description = "A minimal personal website theme that supports blogs, mermaid js and katex. "
+  description = "A minimal personal website theme that supports blogs, mermaid js and katex."
   license = "MIT"
 [author]
   name = ""
