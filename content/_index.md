@@ -1,5 +1,5 @@
 ---
-title: "index pages stuff"
+title: "home page "
 ---
 
 content from index
