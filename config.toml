@@ -2,7 +2,7 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
 name = "Thyme"
-license = "MIT"
+  license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
 homepage = "http://example.com/"
 title = "Thyme Theme"
@@ -13,7 +13,7 @@ min_version = "0.41.0"
 [params]
   author = "Sourav Singh"
   description = "A minimal personal website theme that supports blogs, mermaid js and katex. "
-
+  license = "MIT"
 [author]
   name = ""
   homepage = ""

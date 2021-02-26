@@ -13,7 +13,7 @@
         ></a>
       </div>
 
-      <a href="#">
+      <a href="/">
         <h1>{{ .Site.Title }}</h1>
       </a>
 
@@ -24,10 +24,10 @@
         </div>
       </div>
 
-      <br />
       <u>
         <li>
-          {{ range .Site.RegularPages }}
+
+          {{ range where .Site.RegularPages "Type" "Menu" }}
           <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
         </li>
         {{ end }} {{- partial "header.html" . -}}
@@ -35,26 +35,16 @@
         {{- partial "footer.html" . -}}
       </u>
       
-      <a href="#">About</a>
-      <a href="#">Notes</a>
-      <a href="#" class="dropdown-btn"
-        >Projas<i class="fa fa-caret-down"></i>
-      </a>
+      <a href="#" class="dropdown-btn"> Notes <i class="fa fa-caret-down"></i></a>
       <div class="dropdown-container">
-        {{ range where .Site.RegularPages "Type" "blog_posts" }}
+        {{ range where .Site.RegularPages "Type" "Notes" }}
           <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
         </li>
         {{ end }}
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+      
       </div>
-      <a href="#">Blog</a>
+     
     </div>
-
-    <!-- Toc Sidebar -->
-
-    <!-- Button Bar -->
 
     <div id="menu" class="row">
       <button onclick="openNav()" class="btn">
