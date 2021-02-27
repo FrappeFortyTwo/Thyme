@@ -1,0 +1,54 @@
+<!-- SIDENAV STARTS -->
+<div id="mySidenav" class="sidenav">
+
+    <!-- OPEN BUTTON : FOR SMALLER SCREENS-->
+    <div id="menu" class="row">
+        <button onclick="openNav()" class="btn">
+            <i class="fa fa-caret-right"></i> Menu
+        </button>
+    </div>
+
+    <!-- CLOSE BUTTON : FOR SMALLER SCREENS-->
+    <div id="closeToc" style="margin-bottom: 10%">
+        <a href="javascript:void(0)" id="myclosebtn" class="closebtn" onclick="closeNav()"><i
+                class="fa fa-caret-left"></i></a>
+    </div>
+
+    <!-- SITE TITLE -->
+    <a href="/">
+        <h1>{{ .Site.Title }}</h1>
+    </a>
+
+    <!-- SITE MENU -->
+    <hr>
+    <a href="{{ .Permalink }}" class="navbar-item">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent " main" .) ($currentPage.HasMenuCurrent "main" .)
+            }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a>
+        {{ end }}
+    </a>
+    <hr>
+
+    <!-- PAGE TITLE -->
+    <h2>{{ .Title }}</h2>
+
+    <!-- PAGE DESC -->
+    <div class="oneliner">
+        {{.Description}}
+    </div>
+
+    <!-- TOC -->
+    {{ if .IsPage }}
+    <a href="{{ .Permalink }}" id="toc">
+        {{.TableOfContents }}
+    </a>
+    {{ end }}
+
+    <!-- FOOTER -->
+    <div class="license">
+        <em>Licensed under GNU GPLV3</em>
+    </div>
+
+    <!-- SIDENAV END -->
+</div>

@@ -40,12 +40,13 @@
 
 .sidenav .license {
   
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 4px 4px 4px 32px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   color: gray;
+  background-color: #202020;
   display: block;
   font-size: 18px;
   line-height: 30px;
