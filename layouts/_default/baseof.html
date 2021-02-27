@@ -20,12 +20,14 @@
         <em>Licensed under GNU GPLV3</em>
       </div>
     </div>
-
-    Base of being used here
-
+    <hr>
+    <!-- Back Button -->
     {{- partial "menu.html" . -}}
-
-
+    <hr>
+    <!-- Toc -->
+    <a href="{{ .Permalink }}" id="toc">
+      {{.TableOfContents }}
+    </a>
 
   </div>
 
