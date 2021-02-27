@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
-{{ partial "head" . }}
+
+<!-- HTML HEAD -->
+{{- partial "head" . -}}
 
 <body>
 
+  <!-- OPEN BUTTON -->
+  {{- partial "openBtn" . -}}
+
+  <!-- SIDENAV START-->
   <div id="mySidenav" class="sidenav">
 
-    <div id="closeToc" style="margin-bottom: 10%">
-      <a href="javascript:void(0)" id="myclosebtn" class="closebtn" onclick="closeNav()"><i
-          class="fa fa-caret-left"></i></a>
-    </div>
+    <!-- CLOSE BUTTON-->
+    {{- partial "closeBtn" . -}}
 
-    <a href="/">
-      <h1>{{ .Site.Title }}</h1>
-    </a>
+    <!-- SITE TITLE -->
+    {{- partial "siteTitle" . -}}
 
+    <!-- SITE MENU -->
+    {{- partial "siteMenu" . -}}
 
-    <hr>
-    {{- partial "menu.html" . -}}
-    <hr>
+    <!-- PAGE TITLE -->
+    {{- partial "pageTitle" . -}}
 
-    <h2>{{ .Title }}</h2>
+    <!-- PAGE DESC -->
+    {{- partial "desc" . -}}
 
-    {{- partial "desc.html" . -}}
+    <!-- TOC -->
+    {{- partial "toc" . -}}
 
-    <a href="{{ .Permalink }}" id="toc">
-      {{.TableOfContents }}
-    </a>
-
+    <!-- FOOTER -->
     {{- partial "footer.html" . -}}
 
+    <!-- SIDENAV END-->
   </div>
 
-  <div id="menu" class="row">
-    <button onclick="openNav()" class="btn">
-      <i class="fa fa-caret-right"></i> Menu
-    </button>
-  </div>
-
-  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-
-  <!-- MAIN (Center website) -->
+  <!-- PAGE CONTENT -->
   {{ block "singlecontent" . }}{{ end }}
 
 </body>
+
+<!-- JS -->
 <script src="/js/ui.js"></script>
 
 </html>

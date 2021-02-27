@@ -2,9 +2,9 @@
 <div id="mainsingle">
   <article class="markdown">
     <h1>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ .Title }}
     </h1>
-    <p>{{- .Content -}}</p>
+    {{- .Content -}}
   </article>
 </div>
 {{ end }}
