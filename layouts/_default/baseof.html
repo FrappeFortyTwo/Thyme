@@ -5,6 +5,7 @@
 <body>
 
   <div id="mySidenav" class="sidenav">
+
     <div id="closeToc" style="margin-bottom: 10%">
       <a href="javascript:void(0)" id="myclosebtn" class="closebtn" onclick="closeNav()"><i
           class="fa fa-caret-left"></i></a>
@@ -14,20 +15,20 @@
       <h1>{{ .Site.Title }}</h1>
     </a>
 
-    <div class="oneliner">
-      {{.Description}}
-      <div class="license">
-        <em>Licensed under GNU GPLV3</em>
-      </div>
-    </div>
+
     <hr>
-    <!-- Back Button -->
     {{- partial "menu.html" . -}}
     <hr>
-    <!-- Toc -->
+
+    <h2>{{ .Title }}</h2>
+
+    {{- partial "desc.html" . -}}
+
     <a href="{{ .Permalink }}" id="toc">
       {{.TableOfContents }}
     </a>
+
+    {{- partial "footer.html" . -}}
 
   </div>
 

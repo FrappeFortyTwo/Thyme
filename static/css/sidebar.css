@@ -19,14 +19,41 @@
   /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.sidenav h2 {
+  font-size: 22px;
+  padding: 40px 4px 4px 32px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0s;
+}
+
 /* The navigation menu links */
 .sidenav a {
-  font-size: 25px;
+  font-size: 22px;
   padding: 4px 4px 4px 32px;
   text-decoration: none;
   color: white;
   display: block;
   transition: 0s;
+}
+
+.sidenav .license {
+  
+  position: absolute;
+  bottom: 0;
+  padding: 4px 4px 4px 32px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: gray;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  
+}
+
+.sidenav hr {
+  border-color: #f1f1f1;
 }
 
 /* When you mouse over the navigation links, change their color */
