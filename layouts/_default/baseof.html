@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
-  {{ partial "head" . }}
-  <body>
-    <div id="mySidenav" class="sidenav">
-      <div id="closeToc" style="margin-bottom: 10%">
-        <a
-          href="javascript:void(0)"
-          id="myclosebtn"
-          class="closebtn"
-          onclick="closeNav()"
-          ><i class="fa fa-caret-left"></i
-        ></a>
-      </div>
+{{ partial "head" . }}
 
-      <a href="/">
-        <h1>{{ .Site.Title }}</h1>
-      </a>
-
-      <div class="oneliner">
-       {{.Description}}
-        <div class="license">
-          <em>Licensed under GNU GPLV3</em>
-        </div>
-      </div>
-
-     
-     {{- partial "menu.html" . -}}
-
-     
-      
+<body>
+  <div id="mySidenav" class="sidenav">
+    <div id="closeToc" style="margin-bottom: 10%">
+      <a href="javascript:void(0)" id="myclosebtn" class="closebtn" onclick="closeNav()"><i
+          class="fa fa-caret-left"></i></a>
     </div>
 
-    <div id="menu" class="row">
-      <button onclick="openNav()" class="btn">
-        <i class="fa fa-caret-right"></i> Menu
-      </button>
+    <a href="/">
+      <h1>{{ .Site.Title }}</h1>
+    </a>
+
+    <div class="oneliner">
+      {{.Description}}
+      <div class="license">
+        <em>Licensed under GNU GPLV3</em>
+      </div>
     </div>
 
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    
-      <!-- MAIN (Center website) -->
-      {{ block "singlecontent" . }}{{ end }}
+    Base of being used here
 
-  </body>
-  <script src="/js/ui.js"></script>
+    {{- partial "menu.html" . -}}
+
+
+
+  </div>
+
+  <div id="menu" class="row">
+    <button onclick="openNav()" class="btn">
+      <i class="fa fa-caret-right"></i> Menu
+    </button>
+  </div>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+  <!-- MAIN (Center website) -->
+  {{ block "singlecontent" . }}{{ end }}
+
+</body>
+<script src="/js/ui.js"></script>
+
 </html>

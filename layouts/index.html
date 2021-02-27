@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head" . }}
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <div id="closeToc" style="margin-bottom: 10%">
+            <a href="javascript:void(0)" id="myclosebtn" class="closebtn" onclick="closeNav()"><i
+                    class="fa fa-caret-left"></i></a>
+        </div>
+
+        <a href="/">
+            <h1>{{ .Site.Title }}</h1>
+        </a>
+
+        <div class="oneliner">
+            {{.Description}}
+            <div class="license">
+                <em>Licensed under GNU GPLV3</em>
+            </div>
+        </div>
+
+        {{ .Section }}
+
+        {{- partial "menu.html" . -}}
+
+    </div>
+
+    </div>
+
+    <div id="menu" class="row">
+        <button onclick="openNav()" class="btn">
+            <i class="fa fa-caret-right"></i> Menu
+        </button>
+    </div>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="mainlist">
+        <div class="mainlist">
+            <!-- Portfolio Gallery Grid -->
+
+            {{ range .Site.RegularPages }}
+            <div class="column">
+                <div class="row">
+                    <div class="content">
+                        <img src="images/paris.jpg" alt="Mountains" style="width: 100%" />
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- END MAIN -->
+        </div>
+</body>
+<script src="/js/ui.js"></script>
+
+</html>
