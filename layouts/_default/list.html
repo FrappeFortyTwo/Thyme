@@ -39,11 +39,14 @@
       {{ range where .Site.RegularPages "Type" .Page.Section }}
       <div class="column">
         <div class="row">
-          <div class="content">
-            <img src="images/paris.jpg" alt="Mountains" style="width: 100%" />
-            <h3>{{ .Title }}</h3>
-            <p>{{ .Description }}</p>
-          </div>
+          <a href="{{.Permalink}}">
+            <div class="content">
+              <img src="https://source.unsplash.com/{{ .Params.imgID }}/" alt="{{ .Title }}" style="width: 100%" />
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Description }}</p>
+            </div>
+          </a>
+
         </div>
       </div>
       {{ end }}
