@@ -1,17 +1,16 @@
-<!-- SIDENAV STARTS -->
-<div id="mySidenav" class="sidenav">
+<!-- NAV STARTS -->
+<div id="mySidenav" class="nav">
 
     <!-- OPEN BUTTON : FOR SMALLER SCREENS-->
     <div id="menu" class="row">
-        <button onclick="openNav()" class="btn">
+        <button onclick="openNav()" class="open">
             <i class="fa fa-caret-right"></i> Menu
         </button>
     </div>
 
     <!-- CLOSE BUTTON : FOR SMALLER SCREENS-->
     <div id="closeToc" style="margin-bottom: 10%">
-        <a href="javascript:void(0)" id="myclosebtn" class="closebtn" onclick="closeNav()"><i
-                class="fa fa-caret-left"></i></a>
+        <a href="javascript:void(0)" class="close" onclick="closeNav()"><i class="fa fa-caret-left"></i></a>
     </div>
 
     <!-- SITE TITLE -->
@@ -34,7 +33,7 @@
     <h2>{{ .Title }}</h2>
 
     <!-- PAGE DESC -->
-    <div class="oneliner">
+    <div class="desc">
         {{.Description}}
     </div>
 
@@ -46,7 +45,7 @@
     {{ end }}
 
     <!-- FOOTER -->
-    <div class="license">
+    <div class="footer">
         <em>Licensed under GNU GPLV3</em>
     </div>
 

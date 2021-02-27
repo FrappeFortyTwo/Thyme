@@ -1,63 +1,65 @@
+/* ------------ GENERAl ------------ */
+
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: #f1f1f1;
 }
 
-h1 {
-  font-size: 45px;
-  line-height: 45px;
-}
-
 .row {
   width: 100%;
 }
 
-/* Add padding BETWEEN each column (if you want) */
+/* PADDING BETWEEN COLUMN */
 .row,
 .row > .column {
   padding: 10px;
 }
 
-/* Create five equal columns that floats next to each other */
+/* FLOAT COLUMNS */
 .column {
   float: left;
   width: 20%;
 }
 
-/* Clear floats after rows */
-.row:after {
+/* CLEAR FLOAT AFTER ROWS */
+.column:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
-.content {
+/* CARD */
+.card {
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
 
-.content:hover {
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
-}
+/* ------------ ( ON SMALL SCREENS ) ADJUST LAYOUT ------------ */
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* TWO COLUMN  */
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* ONE COLUMN */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
+}
+
+/* ------------ EFFECTS ------------ */
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
 .column a:link {
