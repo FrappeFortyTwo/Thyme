@@ -24,25 +24,11 @@
         </div>
       </div>
 
-      <u>
-        <li>
-          {{ range where .Site.RegularPages "Type" "Menu" }}
-          <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
-        </li>
-        {{ end }} {{- partial "header.html" . -}}
-
-        {{- partial "footer.html" . -}}
-      </u>
-      
-      <a href="#" class="dropdown-btn"> Notes <i class="fa fa-caret-down"></i></a>
-      <div class="dropdown-container">
-        {{ range where .Site.RegularPages "Type" "Notes" }}
-          <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
-        </li>
-        {{ end }}
-      
-      </div>
      
+     {{- partial "menu.html" . -}}
+
+     
+      
     </div>
 
     <div id="menu" class="row">

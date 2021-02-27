@@ -9,6 +9,7 @@ title = "Sourav Singh"
 tags = []
 features = []
 min_version = "0.41.0"
+sectionPagesMenu = "main"
 
 [params]
   author = "Sourav Singh"
