@@ -1,26 +1,49 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+# Theme Details
 
-name = "Thyme"
-  license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-homepage = "http://example.com/"
-title = "Sourav Singh"
-tags = []
-features = []
+name = "Thyme Theme"
+license = "GNU GPL V3"
+licenselink = "https://github.com/FrappeFortyTwo/Thyme/blob/main/LICENSE"
+homepage = "https://souravsingh.dev/"
+tags = ["Blog","Responsive","Clean","Simple","Minimal","Personal","Fast","Light",]
+features = ["Simple clean design","Light and mobile friendly","Zero initial configuration"]
 min_version = "0.41.0"
+
+# Site Parameters
+
 sectionPagesMenu = "main"
+title = "Sourav Singh"
+
+
+# Author Details
+
+[author]
+  name = "Sourav Singh"
+  homepage = "https://souravsingh.dev"
+
+# Site Parameters
 
 [params]
-  author = "Sourav Singh"
+  title = "Sourav Singh"
   description = "A minimal personal website theme that supports blogs, mermaid js and katex."
   license = "MIT"
-[author]
-  name = ""
-  homepage = ""
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+# Markup Hightlight
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = "true"
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "rrt"
+    tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

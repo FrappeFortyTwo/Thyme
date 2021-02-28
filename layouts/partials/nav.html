@@ -27,6 +27,7 @@
             }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a>
         {{ end }}
     </a>
+    <br>
     <hr>
 
     <!-- PAGE TITLE -->
@@ -39,9 +40,12 @@
 
     <!-- TOC -->
     {{ if .IsPage }}
+    <!-- ENABLE IF WORDCOUNT > 600 -->
+    {{ if and .IsPage (gt .WordCount 600) }}
     <a href="{{ .Permalink }}" id="toc">
         {{.TableOfContents }}
     </a>
+    {{ end }}
     {{ end }}
 
     <!-- FOOTER -->
