@@ -22,9 +22,9 @@
         {{ end }}
       </div>
 
-      <!-- IF SECTION ~ SECTION GALLERY -->
-      {{ if .IsSection }}
       <div class="grid-container">
+        <!-- IF SECTION ~ SECTION GALLERY -->
+        {{ if .IsSection }}
         {{ range where .Site.RegularPages "Type" .Page.Section }}
         {{ partial "gallery" . }}
         {{ end }}

@@ -2,7 +2,7 @@
 
 /* OPEN BUTTON */
 
-.open {
+.nav .open {
   background-color: #202020;
   color: white;
   padding: 12px 12px;
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 450px) {
 
-  .open {
+  .nav .open {
     display: block;
   }
 
