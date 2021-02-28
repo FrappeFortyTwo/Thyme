@@ -5,31 +5,18 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* grid container styel */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-auto-flow: column dense;
+}
+
 body {
   background-color: #f1f1f1;
-}
-
-.row {
-  width: 100%;
-}
-
-/* PADDING BETWEEN COLUMN */
-.row,
-.row > .column {
-  padding: 10px;
-}
-
-/* FLOAT COLUMNS */
-.column {
-  float: left;
-  width: 20%;
-}
-
-/* CLEAR FLOAT AFTER ROWS */
-.column:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* CARD */
@@ -62,22 +49,22 @@ body {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
-.column a:link {
+.grid-container a:link {
   text-decoration: none;
   color: #202020;
 }
 
-.column a:visited {
+.grid-container a:visited {
   text-decoration: none;
   color: #202020;
 }
 
-.column a:hover {
+.grid-container a:hover {
   text-decoration: none;
   color: #202020;
 }
 
-.column a:active {
+.grid-container a:active {
   text-decoration: none;
   color: #202020;
 }

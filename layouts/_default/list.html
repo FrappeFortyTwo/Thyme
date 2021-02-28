@@ -15,17 +15,21 @@
 
       <!-- IF HOME ~ SITE GALLERY -->
       {{ if .IsHome }}
-      {{ range .Site.RegularPages }}
-      {{ partial "gallery" . }}
-      {{ end }}
-      {{ end }}
+      <div class="grid-container">
+        {{ range .Site.RegularPages }}
+        {{ partial "gallery" . }}
+        {{ end }}
+        {{ end }}
+      </div>
 
       <!-- IF SECTION ~ SECTION GALLERY -->
       {{ if .IsSection }}
-      {{ range where .Site.RegularPages "Type" .Page.Section }}
-      {{ partial "gallery" . }}
-      {{ end }}
-      {{ end }}
+      <div class="grid-container">
+        {{ range where .Site.RegularPages "Type" .Page.Section }}
+        {{ partial "gallery" . }}
+        {{ end }}
+        {{ end }}
+      </div>
 
     </div>
   </div>
