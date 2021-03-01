@@ -6,4 +6,11 @@
 
 code {
     font-family: monospace;
+    max-width: auto;
+    height: auto;
+}
+
+img {
+    max-width: auto;
+    height: auto;
 }
