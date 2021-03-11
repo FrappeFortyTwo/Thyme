@@ -1,8 +1,11 @@
 /* ------------ NAVIGATION ------------ */
 
 .nav {
+  
+  width: 280px;
+  float: left;
+  
   height: 100%;
-  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -71,19 +74,7 @@ nav > ul {
 
 /* ------------ CONTENT ------------ */
 
-#mainsingle {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  margin-left: 300px;
-  padding: auto;
-}
 
-#mainlist {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-left: 300px;
-  padding: auto;
-}
 
 /* ------------ ( ON SMALL SCREENS ) ADJUST LAYOUT ------------ */
 

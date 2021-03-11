@@ -1,16 +1,18 @@
 /* ------------ MARKDOWN ------------ */
 
+#mainsingle {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; 
+    padding: auto;
+    margin-left: 300px;
+  }
+
 .markdown {
-    font-size: 21px; 
+
 }
 
 code {
     font-family: monospace;
-    max-width: auto;
-    height: auto;
-}
-
-img {
     max-width: auto;
     height: auto;
 }

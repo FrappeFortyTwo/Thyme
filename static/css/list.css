@@ -1,20 +1,15 @@
-/* ------------ GENERAl ------------ */
-
-* {
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.grid-container {
+.list-grid {
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows: auto auto;
   grid-gap: 20px 20px;
   grid-auto-flow: dense;
 }
 
-body {
-  background-color: #f1f1f1;
+#mainlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 300px;
+  padding: auto;
 }
 
 .card {
@@ -28,14 +23,14 @@ body {
 
 /* TWO COLUMN  */
 @media screen and (max-width: 900px) {
-  .grid-container {
+  .list-grid {
     grid-template-columns: repeat(3,1fr);
   }
 }
 
 /* ONE COLUMN */
 @media screen and (max-width: 600px) {
-  .grid-container {
+  .list-grid {
     grid-template-columns: repeat(2,1fr);
   }
 }
@@ -46,22 +41,22 @@ body {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
-.grid-container a:link {
+.list-grid a:link {
   text-decoration: none;
   color: #202020;
 }
 
-.grid-container a:visited {
+.list-grid a:visited {
   text-decoration: none;
   color: #202020;
 }
 
-.grid-container a:hover {
+.list-grid a:hover {
   text-decoration: none;
   color: #202020;
 }
 
-.grid-container a:active {
+.list-grid a:active {
   text-decoration: none;
   color: #202020;
 }

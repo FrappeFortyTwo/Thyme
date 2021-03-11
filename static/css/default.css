@@ -1,0 +1,51 @@
+/* ------------ GENERAL ------------ */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+body {
+    background-color: #f1f1f1;
+}
+
+/* ------------ ( BY DEFAULT ) DISABLE BUTTONS ------------ */
+
+/* OPEN BUTTON */
+
+.nav .open {
+    background-color: #202020;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+  }
+  
+  .markdown {
+    display: flex;
+    justify-content: center;
+  }
+  /* CLOSE BUTTON */
+  
+  .nav .close {
+    position: absolute;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: none;
+  }
+  
+  /* ------------ ( ON SMALL SCREENS ) ENABLE BUTTONS ------------ */
+  
+  @media screen and (max-width: 450px) {
+  
+    .nav .open {
+      display: block;
+    }
+  
+    .nav .close {
+      display: block;
+    }
+  }
+  

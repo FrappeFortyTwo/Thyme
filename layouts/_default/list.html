@@ -11,28 +11,26 @@
 
   <!-- LIST CONTENT -->
   <div id="mainlist">
-    <div class="mainlist">
 
-      <!-- IF HOME ~ SITE GALLERY -->
-      {{ if .IsHome }}
-      <div class="grid-container">
-        {{ range .Site.RegularPages }}
-        {{ partial "gallery" . }}
-        {{ end }}
-        {{ end }}
-      </div>
-
-      <div class="grid-container">
-        <!-- IF SECTION ~ SECTION GALLERY -->
-        {{ if .IsSection }}
-        {{ range where .Site.RegularPages "Type" .Page.Section }}
-        {{ partial "gallery" . }}
-        {{ end }}
-        {{ end }}
-      </div>
-
-
+    <!-- IF HOME ~ SITE GALLERY -->
+    {{ if .IsHome }}
+    <div class="list-grid">
+      {{ range .Site.RegularPages }}
+      {{ partial "gallery" . }}
+      {{ end }}
+      {{ end }}
     </div>
+
+    <div class="list-grid">
+      <!-- IF SECTION ~ SECTION GALLERY -->
+      {{ if .IsSection }}
+      {{ range where .Site.RegularPages "Type" .Page.Section }}
+      {{ partial "gallery" . }}
+      {{ end }}
+      {{ end }}
+    </div>
+
+
   </div>
 
 </body>
